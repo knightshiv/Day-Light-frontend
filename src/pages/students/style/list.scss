@@ -1,0 +1,100 @@
+.list {
+  //display: inline-block;
+  width: 100%;
+  position: fixed;
+  //overflow: hidden; /* Clear the float */
+  
+} 
+
+.listContainer{
+  //position:fixed; 
+  //float: right;
+  //display: inline-block;
+  //left: 31.5vh;
+  //float: right;
+  //right: 0;
+  //width: auto;
+  //padding: 0;  
+  overflow-y: scroll;
+  height: 100vh;
+  //right: 0;
+}
+
+.datatable {
+  height: "75vh";
+  padding: 20px;
+  margin-bottom: 10px;
+  .datatableTitle{
+    width: 100%;
+    font-size: 24px;
+    color: '#1976d2';
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .link{
+      text-decoration: none;
+      color: green;
+      font-size: 16px;
+      font-weight: 400;
+      border: 1px solid green;
+      padding: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+
+  .cellWithImg {
+    display: flex;
+    align-items: center;
+
+    .cellImg {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 20px;
+    }
+  }
+
+  .cellWithStatus {
+    padding: 5px;
+    border-radius: 5px;
+
+    &.active {
+      background-color: rgba(0, 128, 0, 0.05);
+      color: green;
+    }
+    &.pending {
+      background-color: rgba(255, 217, 0, 0.05);
+      color: goldenrod;
+    }
+    &.passive {
+      background-color: rgba(255, 0, 0, 0.05);
+      color: crimson;
+    }
+  }
+
+  .cellAction {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    .viewButton {
+      padding: 2px 5px;
+      border-radius: 5px;
+      color: darkblue;
+      border: 1px dotted rgba(0, 0, 139, 0.596);
+      cursor: pointer;
+    }
+    
+    .deleteButton {
+      padding: 2px 5px;
+      border-radius: 5px;
+      color: crimson;
+      border: 1px dotted rgba(220, 20, 60, 0.6);
+      cursor: pointer;
+    }
+  }
+}

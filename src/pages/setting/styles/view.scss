@@ -1,0 +1,331 @@
+.single {
+    display: flex;
+    width: 80%;
+    position: fixed;
+    // height: 100%;
+    
+  
+    
+    .detailItem {
+      display: flex;
+      flex-basis: 50%; /* Two items per row, adjust as needed */
+      margin-bottom: 10px; /* Adjust margin between items */
+    }
+    
+    .itemKey {
+      width: 120px; /* Adjust key width */
+      font-weight: bold; /* Make the key bold */
+      margin-right: 5px; /* Adjust space between key and value */
+    }
+  
+    .col-action {
+      display: flex;
+      justify-content: flex-end;
+    }
+    
+    .col-action button {
+      font-size: 12px;
+      box-shadow: none;
+    }
+    
+    
+    .singleContainer {
+      overflow-y: scroll;
+      height: 100vh;
+      //flex: 6;
+      // position: absolute;
+      // top: 0;
+      // left: 10rem;
+      // bottom: 0;
+      // right: 0; /* stretch from top to bottom, and shift 10rem from left and stretch till right */
+      // overflow-y: scroll;
+      //margin-left: 16%;
+      .top {
+        padding: 20px;
+        display: flex;
+        gap: 20px;
+  
+        .left {
+          flex: 1;
+          -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+          box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+          padding: 20px;
+          position: relative;
+          border-radius: 5px;
+          background-color: #98b7e5;
+  
+  
+          .header{
+            flex:1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2em;
+            border-radius: 5px 5px 0 0;
+            border-top: 0.1px solid rgba(50, 50, 50, 0.75);
+            -webkit-box-shadow: 0px 0.5px 0.5px #fff;
+            -moz-box-shadow:    0px 0.5px 0.5px #fff;
+            box-shadow:         0px 0.5px 0.5px #fff;
+            
+            //background-color: #73E6FF;
+            background-color: #00c0ef;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+            
+            .title{
+              display: flex;
+              color: #fff;
+              text-align: center;
+              height: 100%;
+              justify-content: center;
+              align-items: center;
+              font-weight: bold;
+            }
+          }
+  
+          .bottomContainer {
+            display: flex;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            left: 0;
+            background-color: #73E6FF;
+            border-radius: 0 0 5px 5px;
+            border-top: 0.5px solid #fff;
+            -webkit-box-shadow: 0px 0.5px 0.5px rgba(50, 50, 50, 0.75);
+            -moz-box-shadow:    0px 0.5px 0.5px rgba(50, 50, 50, 0.75);
+            box-shadow:         0px 0.5px 0.5px rgba(50, 50, 50, 0.75);
+            
+            .infoButtonContainer {
+              flex: 1;
+              display: flex;
+              
+              .infoButton{
+                flex: 1;
+                background-color: #73E6FF;
+                color: #fff;
+                border-radius: 0px 0px 5px 5px;
+                cursor: pointer;
+                font-size: 12px;
+  
+                border-right: 0.5px solid white; /* Right border */
+                border-left: 0.5px solid white; /* Left border */
+  
+              }
+            }
+  
+          }
+  
+          .item {
+            display: flex;
+            gap: 20px;
+            width: 100%;
+            margin-top: 2em;
+  
+            .details{
+              margin-left: 1em;
+              width: 100%;
+            }
+  
+            .details {
+              width: 100%;
+  
+              .itemHead{
+                display: flex;
+                width: 100%;
+                margin-bottom: 20px;
+              }
+              
+              .itemImg {
+                flex: 1;
+                .img{
+                  width: 100px;
+                  height: 100px;
+                  border-radius: 50%;
+                  object-fit: cover;
+                  border-width: 2px;
+                  border-style: solid;
+                  border-color: white;
+                }
+              }
+    
+              .itemTitle {
+                color: #555;
+                flex: 1;
+                align-self: center;
+  
+                .h1{
+                  justify-content: center;
+                  align-self: center;
+  
+                }
+              }
+  
+              .detailsInfo::-webkit-scrollbar {
+                display: none;
+              }
+  
+              .detailsInfo{
+                
+                overflow-y: scroll;
+                height: 30vh;
+                width: 100%;
+                -ms-overflow-style: none;  /* IE and Edge */
+                scrollbar-width: none;  /* Firefox */
+  
+                
+  
+                .detailItem {
+                  display:flex;
+                  margin-bottom: 10px;
+                  font-size: 14px;
+    
+                  .itemKey {
+                    flex: 1;
+                    font-weight: bold;
+                    color: #263238;
+                    margin-right: 5px;
+                  }
+    
+                  .itemValue {
+                    flex: 1;
+                    font-weight: 500;
+                    color:#3e98c7
+                  }
+              }
+              
+              }
+            }
+          }
+        }
+  
+        .right {
+          flex: 2;
+        }
+      }
+  
+      .bottom {
+        -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        padding: 20px;
+        margin: 10px 20px;
+      }
+  
+      .title {
+        font-size: 18px;
+        color: '#2e2e2e';
+        margin-bottom: 20px;
+      }
+    }
+  
+    .fc-button.fc-prev-button, .fc-button.fc-next-button, .fc-button.fc-button-primary{
+      background: #a1c436;
+      background-image: none;
+    }
+    .fc-neutral {
+      color: #a1c436;
+    }
+    /* Change the color of the center part of the header (title) */
+    .fc-header-toolbar .fc-center {
+      color: blue; /* Change to your desired text color */
+    }
+  }
+  
+  .featured {
+    flex: 2;
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    padding: 10px;
+    background-color:#39cccc !important;
+    border-radius: 10px;
+    height: 75vh;
+    .top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: black;
+  
+      .title {
+        font-size: 20px;
+        font-weight: 500;
+        color:white
+      }
+    }
+  
+    .feature-bottom {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+  
+      .featuredChart {
+        width: 100px;
+        height: 100px;
+      }
+  
+      .title-head{
+        font-weight: 500;
+        color: white;
+        width: 100%;
+        
+      }
+  
+      .title {
+        font-weight: 500;
+        color: #3e98c7;
+        font-style: bold;
+        
+      }
+  
+      .amount {
+        font-size: 30px;
+        font-style: bold;
+        color: #263238;
+      }
+  
+      .desc {
+        font-weight: 300;
+        font-size: 18px;
+        color: white;
+        text-align: center;
+        font-style: bold;
+        
+      }
+  
+      .summary {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+  
+        .item {
+          text-align: center;
+  
+          .itemTitle {
+            font-size: 14px;
+            color: #00c0ef;
+          }
+  
+          .itemResult {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            font-size: 14px;
+  
+            &.positive {
+              color: green;
+            }
+  
+            &.negative {
+              color: red;
+            }
+          }
+        }
+      }
+    }
+  }
+  

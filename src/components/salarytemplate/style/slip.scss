@@ -1,0 +1,183 @@
+/* SalarySlip.css */
+
+/* Overall container */
+.salary-slip {
+    width: 800px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #fff;
+    display: flex; /* Use flexbox to arrange sections */
+    flex-direction: column; /* Stack sections vertically */
+  }
+  
+  /* Header */
+  .salary-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3e98c7;
+    padding: 10px;
+  }
+  
+  .header img {
+    height: 90px;
+  }
+  
+  .company-name {
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .employee-header{
+    display: flex;
+  }
+  
+  /* Employee Details */
+  .employee-details {
+    flex:1;
+    margin-top: 20px;
+  }
+  
+  .detail-row {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .label {
+    width: 150px;
+    font-weight: bold;
+  }
+  
+  /* Table Styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  table th,
+  table td {
+    
+    padding: 8px;
+    text-align: left;
+    height: 22px;
+  }
+
+
+  .table-header {
+    background-color: #c2d69b;
+    font-weight: bold;
+  }
+
+  .name-align {
+    //text-align:right;
+    border: 0px solid black;
+    //font-weight: bold;
+
+    //border-bottom: 0px solid black;
+  }
+
+  .amount-align {
+    text-align:right;
+    border: 0px solid black;
+  }
+  
+  /* Totals Section */
+  .totals {
+    display: flex;
+    //justify-content: space-between;
+    //margin-top: 20px;
+  }
+
+  .additions-deductions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .additions .deductions {
+    flex: 1;
+    width: 100%;
+  }
+  
+  .total-additions,
+  .total-deductions {
+    flex: 1;
+    width: 100%;
+  }
+
+  .sum-additions,
+  .sum-deductions {
+    flex: 1;
+    width: 100%;
+    
+  }
+  
+  /* Footer Section */
+  .footer {
+    margin-top: 20px;
+  }
+  
+  /* Additional styling as needed */
+
+  .salaryMonth {
+    text-align: center;
+  }
+  
+  .table-border-bottom {
+    border-bottom: 1px solid;
+  }
+  
+  .table-border-right {
+    border-right: 1px solid;
+  }
+  
+  .myBackground {
+    padding-top: 10px;
+    text-align: left;
+    border: 1px solid black;
+    height: 40px;
+  }
+  
+  .myAlign {
+    text-align: center;
+    border-right: 1px solid black;
+  }
+  
+  .myTotalBackground {
+    padding-top: 10px;
+    text-align: left;
+    background-color: #EBF1DE;
+    border-spacing: 0px;
+  }
+  
+  .align-4 {
+    width: 25%;
+    float: left;
+  }
+  
+  .tail {
+    margin-top: 35px;
+  }
+  
+  .align-2 {
+    margin-top: 25px;
+    width: 50%;
+    float: left;
+  }
+  
+  .border-center {
+    text-align: center;
+  }
+  .border-center th, .border-center td {
+    border: 1px solid black;
+  }
+  
+  th, td {
+    padding-left: 6px;
+  }
+  
